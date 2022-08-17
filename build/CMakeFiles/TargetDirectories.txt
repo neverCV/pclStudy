@@ -1,4 +1,0 @@
-/home/lixu/Code/cppCode/pclStudy/build/CMakeFiles/matrix_transform.dir
-/home/lixu/Code/cppCode/pclStudy/build/CMakeFiles/test.dir
-/home/lixu/Code/cppCode/pclStudy/build/CMakeFiles/edit_cache.dir
-/home/lixu/Code/cppCode/pclStudy/build/CMakeFiles/rebuild_cache.dir
