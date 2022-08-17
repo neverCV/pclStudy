@@ -6,12 +6,12 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-include(CTest)
+# include(CTest)
 enable_testing()
 
 add_executable(matrix_transform matrix_transform.cpp)
 target_link_libraries(matrix_transform ${PCL_LIBRARIES})
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+# set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+# set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+# include(CPack)
