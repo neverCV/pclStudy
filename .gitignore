@@ -1,3 +1,4 @@
 build/
 .vscode/
 registration/incerementallyIcp/cmake-build-debug/
+registration/incerementallyIcp/.idea/
