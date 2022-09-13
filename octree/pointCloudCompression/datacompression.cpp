@@ -32,7 +32,7 @@ int main(int argc, char **argv)
     // homework.pcd 是xyzi类型的
     if (pcl::io::loadPCDFile<pcl::PointXYZ>("homework.pcd", *cloudWaitForCompress) == -1)
     {
-        PCL_ERROR("打不开homework.pcd! 请输入争取的文件名！");
+        PCL_ERROR("打不开homework.pcd! 请输入正确的文件名！");
         return -1;
     }
     std::cout << "压缩前点的个数为： "

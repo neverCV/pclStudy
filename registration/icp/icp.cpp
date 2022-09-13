@@ -24,15 +24,15 @@ int main(int argc, char **argv)
     *cloud_out = *cloud_in;
     cout << "\nsize " << cloud_out->size() << endl;
     for (auto &point : *cloud_out)
-        // point.x += 0.7f;
-        point.x += 0.1 * rand() / (RAND_MAX + 1.0f);
+        point.x += 0.7f;
+        // point.x += 0.1 * rand() / (RAND_MAX + 1.0f);
     cout << "Transformed " << cloud_in->size() << " data points:" << endl;
     for (auto point : *cloud_out)
         cout << point << endl;
     pcl::IterativeClosestPoint<pcl::PointXYZ, pcl::PointXYZ> icp;
     icp.setInputSource(cloud_in);
     icp.setInputTarget(cloud_out);
-
+    icp.setMaximumIterations(1);
     pcl::PointCloud<pcl::PointXYZ> Final;
 
     icp.align(Final);
